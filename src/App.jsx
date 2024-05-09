@@ -12,7 +12,7 @@ export default function App() {
     <div className='app'>
       <Userlist friends={friends} setFriends={setFriends} selectedUser={selectedUser} setSelectedUser={setSelectedUser} />
       {selectedUser &&
-        <SplitBill selectedUser={selectedUser} friends={friends} setFriends={setFriends} />}
+        <SplitBill selectedUser={selectedUser} friends={friends} setFriends={setFriends} key={selectedUser}/>}
     </div>
   )
 }
